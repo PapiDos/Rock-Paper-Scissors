@@ -6,6 +6,6 @@ function getHumanChoice() {
 
 // Function to generate computer choice
 function getComputerChoice() {
-  let ComputerChoice = ["rock", "paper", "scissors"];
-  return ComputerChoice[Math.floor(Math.random() * 3)];
+  let computerChoice = ["rock", "paper", "scissors"];
+  return computerChoice[Math.floor(Math.random() * 3)];
 }
