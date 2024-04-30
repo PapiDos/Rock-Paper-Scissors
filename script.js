@@ -30,3 +30,24 @@ function playRound(humanChoice, computerChoice) {
     console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
   }
 }
+// FUNCTION TO PLAY THE ENTIRE GAME (5 ROUNDS)
+function playGame() {
+  for (i = 0; i < 5; i++) {
+    // Loop for 5 rounds
+    // Get choices from human and computer
+    let humanSelection = getHumanChoice();
+    let computerSelection = getComputerChoice();
+    // Play a round with computer and human choices
+    playRound(humanSelection, computerSelection);
+  }
+  // Determine the winner of the game
+  if (humanScore > computerScore) {
+    console.log(`Game over. You won! ${humanScore} x ${computerScore}`);
+  } else if (humanScore < computerScore) {
+    console.log(`Game over. You lost ${humanScore} x ${computerScore}`);
+  } else {
+    console.log(`Game over. It's a tie: ${humanScore} x ${computerScore}`);
+  }
+}
+// START THE GAME
+playGame();
