@@ -32,8 +32,7 @@ function playRound(humanChoice, computerChoice) {
 }
 // FUNCTION TO PLAY THE ENTIRE GAME (5 ROUNDS)
 function playGame() {
-  for (i = 0; i < 5; i++) {
-    // Loop for 5 rounds
+  for (i = 0; i < 5; i++) { // Loop for 5 rounds
     // Get choices from human and computer
     let humanSelection = getHumanChoice();
     let computerSelection = getComputerChoice();
