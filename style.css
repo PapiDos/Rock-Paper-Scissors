@@ -10,3 +10,22 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #CAF0F8;
 }
+
+/* Game title styling */
+.game-title {
+  text-align: center;
+  margin-top: 100px;
+  color: #03045e;
+  font-size: 2.5em;
+}
+
+/* Main container styling */
+.main-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 50px;
+  text-align: center;
+  background-color: #90E0EF;
+  border-radius: 10px;
+  box-shadow: 1px 1px 16px #222831;
+}
