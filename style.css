@@ -29,3 +29,15 @@ body {
   border-radius: 10px;
   box-shadow: 1px 1px 16px #222831;
 }
+
+/* Score and game status Styling */
+.game-status {
+  color: #03045e;
+  font-size: 1.4em;
+}
+
+.score {
+  font-size: 1em;
+  margin-top: 50px;
+  font-size: 1.1em;
+}
