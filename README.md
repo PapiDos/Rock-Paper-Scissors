@@ -15,12 +15,12 @@ This JavaScript project demonstrates my initial JavaScript skills acquired throu
 
 ## How to play (Updated)
 
-It's a human vs. computer game and it's the first 5 rounds.
+It's a human vs. computer game and it's the first to 5 rounds.
 
 Make your choice and follow the score. Whoever gets to 5 rounds first, wins the game.
 
 <details>
-  <summary><strong><s>Old way to play</s></strong></summary>
+  <summary><strong><s>Old way to play</s></strong> (Without a UI)</summary>
 
 It's a human vs. computer game and it's the best of 5 rounds.
 
@@ -35,7 +35,7 @@ It's a human vs. computer game and it's the best of 5 rounds.
 
 ✊🏻📃✂️[Click here to play the game](https://papidos.github.io/rock-paper-scissors/)✂️📃✊🏻
 
-## Technologies Used
+## Technologies Used (Updated)
 
 - HTML
 - CSS (New)
