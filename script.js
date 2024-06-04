@@ -25,7 +25,7 @@ let winningScore = 5;
 
 // Function to play a single round of the game
 function playRound(humanChoice, computerChoice) {
-  // Determine round outcome of the round
+  // Determine round outcome
   if (humanChoice === computerChoice) {
     gameStatus.textContent = `It's a tie, choose again`;
   } else if (
