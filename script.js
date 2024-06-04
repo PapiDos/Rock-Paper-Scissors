@@ -61,3 +61,9 @@ function determineWinner() {
   }
   resetScore();
 }
+
+// Function to reset scores after game ends
+function resetScore() {
+  humanScore = 0;
+  computerScore = 0;
+}
