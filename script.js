@@ -51,3 +51,13 @@ function playRound(humanChoice, computerChoice) {
 function updateScoreDisplay() {
   scoreDisplay.textContent = `Your score ${humanScore} | PC score ${computerScore}`;
 }
+
+// Function to determine the overall winner of the game
+function determineWinner() {
+  if (humanScore === winningScore) {
+    gameStatus.innerHTML = `You won ${humanScore} x ${computerScore}<br>Choose to start another game`;
+  } else {
+    gameStatus.innerHTML = `You Lost ${humanScore} x ${computerScore}<br>Choose to start another game`;
+  }
+  resetScore();
+}
