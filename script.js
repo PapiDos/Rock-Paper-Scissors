@@ -3,11 +3,14 @@ let gameStatus = document.querySelector(".game-status");
 let scoreDisplay = document.querySelector(".score");
 let playerSelection = document.querySelectorAll(".player-selection button");
 
-// Function to prompt for human choice
-function getHumanChoice() {
-  let humanChoice = prompt("Choose rock, paper or scissors");
-  return humanChoice.toLowerCase(); // Normalize human choice for comparison
-}
+// Captures player and computer selection and initiate a round 
+playerSelection.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    let humanChoice = btn.textContent.toLowerCase();
+    let computerChoice = getComputerChoice();
+    playRound(humanChoice, computerChoice);
+  });
+});
 
 // Function to generate computer choice
 function getComputerChoice() {
