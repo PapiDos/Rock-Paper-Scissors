@@ -1,3 +1,8 @@
+// Select DOM elements
+let gameStatus = document.querySelector(".game-status");
+let scoreDisplay = document.querySelector(".score");
+let playerSelection = document.querySelectorAll(".player-selection button");
+
 // Function to prompt for human choice
 function getHumanChoice() {
   let humanChoice = prompt("Choose rock, paper or scissors");
