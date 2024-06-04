@@ -6,7 +6,21 @@ This is a rock paper scissors game made in javascript.
 
 This JavaScript project demonstrates my initial JavaScript skills acquired through the Foundation course of [The Odin Project](https://www.theodinproject.com/).
 
-## How to play the game
+## Updates
+
+**Version 1.1.0 (June 4, 2024)**
+
+- UI has been created
+- Game rules have been updated
+
+## How to play (Updated)
+
+It's a human vs. computer game and it's the first 5 rounds.
+
+Make your choice and follow the score. Whoever gets to 5 rounds first, wins the game.
+
+<details>
+  <summary><strong><s>Old way to play</s></strong></summary>
 
 It's a human vs. computer game and it's the best of 5 rounds.
 
@@ -17,12 +31,14 @@ It's a human vs. computer game and it's the best of 5 rounds.
 2. Check Chrome's console to see who won the round.
 
 3. Play 5 rounds and check results in Chrome's console to see who won the match.
+</details><br>
 
-✊🏻📃✂️[Click here to play the game](https://papidos.github.io/Rock-Paper-Scissors/)✂️📃✊🏻
+✊🏻📃✂️[Click here to play the game](https://papidos.github.io/rock-paper-scissors/)✂️📃✊🏻
 
 ## Technologies Used
 
 - HTML
+- CSS (New)
 - Javascript
 - Git
 - GitHub
@@ -30,7 +46,7 @@ It's a human vs. computer game and it's the best of 5 rounds.
 
 ## Future Enhancements
 
-As I progress through the curriculum, I might revisit this project to add a UI with HTML and CSS. I might also add more features or improve JavaScript functionality.
+As I progress through the curriculum, I might revisit this project to improve the UI design.
 
 ## About The Odin Project
 
