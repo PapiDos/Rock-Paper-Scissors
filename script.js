@@ -46,3 +46,8 @@ function playRound(humanChoice, computerChoice) {
   // Update score display
   updateScoreDisplay();
 }
+
+// Function to update the score display
+function updateScoreDisplay() {
+  scoreDisplay.textContent = `Your score ${humanScore} | PC score ${computerScore}`;
+}
