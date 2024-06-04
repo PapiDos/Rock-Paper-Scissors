@@ -18,8 +18,10 @@ function getComputerChoice() {
   return computerChoice[Math.floor(Math.random() * 3)];
 }
 
+// Initialize scores
 let humanScore = 0;
 let computerScore = 0;
+let winningScore = 5;
 
 // FUNCTION TO PLAY A SINGLE ROUND OF THE GAME
 function playRound(humanChoice, computerChoice) {
