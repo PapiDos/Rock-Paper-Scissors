@@ -3,7 +3,7 @@ let gameStatus = document.querySelector(".game-status");
 let scoreDisplay = document.querySelector(".score");
 let playerSelection = document.querySelectorAll(".player-selection button");
 
-// Captures player and computer selection and initiate a round 
+// Captures player and computer selection and initiate a round
 playerSelection.forEach((btn) => {
   btn.addEventListener("click", () => {
     let humanChoice = btn.textContent.toLowerCase();
@@ -46,23 +46,3 @@ function playRound(humanChoice, computerChoice) {
   // Update score display
   updateScoreDisplay();
 }
-// FUNCTION TO PLAY THE ENTIRE GAME (5 ROUNDS)
-function playGame() {
-  for (i = 0; i < 5; i++) { // Loop for 5 rounds
-    // Get choices from human and computer
-    let humanSelection = getHumanChoice();
-    let computerSelection = getComputerChoice();
-    // Play a round with computer and human choices
-    playRound(humanSelection, computerSelection);
-  }
-  // Determine the winner of the game
-  if (humanScore > computerScore) {
-    console.log(`Game over. You won! ${humanScore} x ${computerScore}`);
-  } else if (humanScore < computerScore) {
-    console.log(`Game over. You lost ${humanScore} x ${computerScore}`);
-  } else {
-    console.log(`Game over. It's a tie: ${humanScore} x ${computerScore}`);
-  }
-}
-// START THE GAME
-playGame();
