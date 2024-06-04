@@ -23,22 +23,28 @@ let humanScore = 0;
 let computerScore = 0;
 let winningScore = 5;
 
-// FUNCTION TO PLAY A SINGLE ROUND OF THE GAME
+// Function to play a single round of the game
 function playRound(humanChoice, computerChoice) {
-  // Determine round outcome and update scores accordingly.
+  // Determine round outcome of the round
   if (humanChoice === computerChoice) {
-    console.log("It's a tie");
+    gameStatus.textContent = `It's a tie, choose again`;
   } else if (
     (humanChoice === "rock" && computerChoice === "scissors") ||
     (humanChoice === "paper" && computerChoice === "rock") ||
     (humanChoice === "scissors" && computerChoice === "paper")
   ) {
     humanScore++;
-    console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+    gameStatus.textContent = `You win! ${humanChoice} beats ${computerChoice}`;
   } else {
     computerScore++;
-    console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+    gameStatus.textContent = `You lose, ${computerChoice} beats ${humanChoice}`;
   }
+  // Check for overall winner of the game
+  if (humanScore === winningScore || computerScore === winningScore) {
+    determineWinner();
+  }
+  // Update score display
+  updateScoreDisplay();
 }
 // FUNCTION TO PLAY THE ENTIRE GAME (5 ROUNDS)
 function playGame() {
